@@ -30,15 +30,15 @@ The data files are as below:
 
 - wiki_movies_df: Wikipedia JSON file transformed to a Pandas DataFrame.
 
-![wiki_movies_df]()
+![wiki_movies_df](https://github.com/Nusratnimme/Movies-ETL/blob/main/Images/Wiki_movies_df.png)
 
 - kaggle_metadata: Kaggle metadata file transformed to a Pandas DataFrame.
 
-![kaggle_metadata]()
+![kaggle_metadata](https://github.com/Nusratnimme/Movies-ETL/blob/main/Images/Kaggle_metadata_df.png)
 
 - ratings: MovieLens ratings data file transformed to a Pandas DataFrame.
 
-![ratings]()
+![ratings](https://github.com/Nusratnimme/Movies-ETL/blob/main/Images/Ratings_df.png)
 
 
 ### Step-2:  Transform the Wikipedia Data 
@@ -50,9 +50,9 @@ The data files are as below:
 
 The clean wiki movies dataframe and columns are listed below.
 
-![clean_wiki_movies]()
+![clean_wiki_movies](https://github.com/Nusratnimme/Movies-ETL/blob/main/Images/clean_wiki_movies.png)
 
-![wiki_movies_columns]()
+![wiki_movies_columns](https://github.com/Nusratnimme/Movies-ETL/blob/main/Images/wiki_movies_columns.png)
 
 
 ### Step-3: Extract and Transform the Kaggle Data
@@ -64,9 +64,7 @@ The clean wiki movies dataframe and columns are listed below.
 - A new dataframe titled **movies_with_ratings_df** was created by merging **movies_df** and **ratings**.
 - **movies_with_ratings_df** was cleaned, merged with the cleaned ratings data, and empty values in the dataframe were filled with “0”.
 
-![movies_with_ratings]()
-
-![movies_df]()
+![movies_df](https://github.com/Nusratnimme/Movies-ETL/blob/main/Images/movies_df.png)
 
 
 ### Step-4: Load to SQL Database
@@ -74,6 +72,6 @@ The clean wiki movies dataframe and columns are listed below.
 - Connection to the PostgreSQL database was established to load **movies_df** dataframe and **ratings.csv**
 file.
 
-![movies_query]()
+![movies_query](https://github.com/Nusratnimme/Movies-ETL/blob/main/Resources/movies_query.png)
 
-![ratings_query]()
+![ratings_query](https://github.com/Nusratnimme/Movies-ETL/blob/main/Resources/ratings_query.png)
